@@ -10,7 +10,7 @@ body{
 }
 
 header{
-    background: #1972E5;
+    background: #1554a7;
     height: 66px;
     
 
@@ -88,7 +88,7 @@ header ul li a{
 }
 
 header ul li a:hover{
-    background: #1763c6;
+    background: #104589;
     transition: 0.5s;
 }
 header .menu-toggle{
@@ -96,3 +96,56 @@ header .menu-toggle{
 }
 
 
+/*MEDIA QUERIES */
+
+@media only screen and (max-width: 750px) {
+    header{
+        position: relative;
+    }
+
+    header  ul {
+        width: 100%;
+        background: #1963c5;
+        max-height: 0px;
+        overflow: hidden;
+    }
+
+
+    header ul li{
+        width: 100%;
+    }
+
+    header ul li ul {
+    position: static;
+    display: block;
+    width: 100%;
+    }
+
+    header ul li ul li a{
+        padding: 10px;
+        background: #1963c5;
+        color: white;
+        padding-left: 50px;
+        
+        }
+
+
+    header ul li ul li a:hover{
+            background: #104589;
+            
+        }
+
+        header .menu-toggle {
+            display: block;
+            right: 20px;
+            top: 20px;
+            font-size: 1.9em;
+            position: absolute;
+        }
+          
+        header .logo{
+    
+            margin-left: .8em;
+        }
+        
+}
